@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--è preferibile usare stili CSS con il list-style-type e non gli attributi di etichetta (list, ul, li...)
+    <style>
+        ul{list-style-type: none/circle/square...}
+        ul{list-style-image: url("img/lista_flecha.png")}
+    </style-->
+</head>
+<body>
+    <!--LISTA ORDINATA-->
+    <ol start="2">
+        <li>Elemento1</li><!--per difetto lista ordinata con numeri, con start indico il numero di inizio, non funziona con la lettera-->
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>Elemento5</li>
+    </ol>
+
+    <ol type="a"> <!--ordine alfanumerico con a, A, i, I per i numeri romani-->
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>Elemento5</li>
+    </ol>
+<!--LISTA NON ORDINATA-->
+    <ul type="square"><!--non è possibile usare l attributo start ma l attributo type: square, circle, i punti sono per difetto-->
+        <li>Elemento1</li>
+        <li>Elemento2</li>
+        <li>Elemento3</li>
+        <li>Elemento4</li>
+        <li>Elemento5</li>
+    </ul>
+</body>
+</html>
