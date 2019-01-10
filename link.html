@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+        div{
+            height: 400px;
+            border: 1px solid rebeccapurple;
+        }
+        a{
+            color: green;
+            cursor: url("img/gorro_cocina.png"), auto; /*non funziona*/
+        }
+    </style>
+</head>
+<body>
+    
+        <div>
+        <h1>Section 1</h1>
+        <a href="lista_bicolore.html">Lista bicolore</a><!--Link a pagina interna-->
+        <a href="http://www.google.com" target="blank">Go to Google</a><!--Link a pagina esterna, aggiungere il target in modo che lo user non esca dalla nostra web-->
+        <a href="img/punta_cana_4.jpg" target="blank">Ti piace questa immagine?</a><!--Link a img, pdf, zip...-->
+        <a href="#section2" style='text-decoration:none'>Vai a section 2</a><!--Link a una sezione della stessa pagina, ho inoltre tolto il sottolineato-->
+    </div>
+    <div id="section2">
+            <h2>Section 2</h2>
+    </div>
+    <div>
+        <h2>Section 3</h2>
+    </div>
+    
+</body>
+</html>
+
+<!--per saltare a un ancla di un documento esterno: <a href:"index.html#ancla"><a>-->
