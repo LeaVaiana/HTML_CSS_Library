@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            height: 100vh; /*vh: altezza del dispositivo, l'ampiezza è per defetto e non è necessario ponerlo*/
+            background-image: url(img/punta_cana_2.jpg);
+            background-repeat: no-repeat; 
+            background-position: center;
+            /*background-attachment: fixed; Necessario se immagine nel body. The background-attachment property sets whether a background image scrolls with the rest of the page, or is fixed. Used with bg position & repeat*/
+            /*background-size: contain; 100% distorsiona la imagen;podemos dar un tamaño: 100px 100px; cover distorsiona; contain intenta cubrir toda el area del body sin distorsionarse*/
+            border: 1px solid black;}
+        div:hover {
+            background-image: url(img/punta_cana_1.jpg);
+        }
+
+    </style>
+</head>
+<body>
+    <div></div>
+   
+</body>
+</html>
+
+<!--background-size: auto|length|cover|contain|initial|inherit;
+    cover: Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges
+    contain:  	Resize the background image to make sure the image is fully visible,
+-->

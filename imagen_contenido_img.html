@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Immagine come contenuto</title>
+    <style>
+        img {
+            width: 100px;
+            transition: transform 0.3s; /*Senza transition/transform la transizione è brusca*/
+            }
+        img:hover {
+            width: auto;/* auto mi da la dimensione originale dell'immagine*/
+            transform: scale(1.5);
+            } 
+        figcaption{color: indigo;}
+    </style>
+    
+</head>
+<body>
+    <div>
+        <figure>
+                <img src="img/punta_cana_3.jpg"  alt ="Punta Cana beach" title="Punta Cana beach"/>
+                <figcaption>Playa Punta Cana</figcaption>
+        </figure>
+    </div>
+</body>
+</html>
+
+<!--img attribute for SEO: src & alt, per indexare le immagini. 
+    Title normalmente usa lo stesso testo dell'alt ed è opzionale perchè a volte disturba, lo vediamo al passare con il mouse
+    Altri attributi di img: width="100px" height="200px"
+    Posso mettere la etichetta img dentro di figure e poi usare l'etichetta figcaption per mettere un piccolo testo sotto l'immagine
+    Pseudoselector hover per cambiare la immagine quando ci passo sopra con il mouse-->
