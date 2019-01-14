@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    div{
+        width: 300px;
+        height: 100px;/*se non lo definiamo, l'height sará quello occupato dal contenitore*/
+        background-color: aquamarine;
+        border: 2px solid blueviolet;
+        display:inline-block;/*"box" uno accanto all'altro, con un espazio per difetto, per la caja che va sotto, aggiungere il margine sopra o sotto*/
+        vertical-align: top;/*solo cosí las cajas non si allineano con il contenuto, e si allineano con la linea superiore del div, si usa in combinazione con display: inline- block*/
+        text-align: center;/*mi centra il testo*/
+    }
+    section {
+        text-align: center;/*mettendo i tre div dentro un altro contenitore si centrano i 3 div*/
+        padding: 10px;
+        background-color: rgb(143, 226, 198);
+    }
+    
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>a</div>
+        <div>a</div>
+        <div>a</div>
+    </section>
+  
+</body>
+
+</html>

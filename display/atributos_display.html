@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style type="text/css">
+    div{
+        width: 300px;
+        height: 100px;/*se non lo definiamo, l'height sará quello occupato dal contenitore*/
+        background-color: aquamarine;
+        display: block;
+        margin: 10px;
+        padding: 10px;
+        border: 5px ridge gold;
+        box-sizing: border-box;/*la caja non sará mai piu grande di 300 px, si aggiusteranno automaticamente padding e il border del contenitore*/
+        
+    }
+    section {
+        width: 320px;/*bisogna tenere in considerazione il margin degli elementi contenuti*/
+        background-color: rgb(143, 226, 198);
+        border: 2px solid blue;/*se togliamo il border il margin degli elementi contenuti non si applicherebbe sopra o sotto (aggiungere contenuto, borde, padding o height)*/
+    }
+    
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>a</div>
+        <div>a</div>
+    </section>
+  
+</body>
+
+</html>
