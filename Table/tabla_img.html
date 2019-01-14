@@ -1,0 +1,123 @@
+<!--tabla 4 fila e 3 colonne-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Tabla</title>
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border: 1px solid #00aeff;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid blue;
+            padding: 10px;
+            vertical-align: top
+        }
+
+        .a150 {
+            width: 150px;
+        }
+
+        .a300 {
+            width: 300px;
+        }
+
+        .margin {
+            margin-right: 10px;
+            margin-top: 20px;
+        }
+
+        img {
+            float: left;
+            width: 100px;
+        }
+
+        div {
+            width: 602px;
+        }
+
+        .fondo {
+            background-image: url("boton_on.jpg")
+        }
+
+        p {
+            font-size: 11px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!--mettere la tavola dentro di un div-->
+        <table>
+            <tr>
+                <th colspan="2">Articulo</th>
+                <th class="a300">Fotos</th>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/carrot-icon.png"
+                        class="margin">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium vero nostrum
+                        laborum a, minima cum eveniet commodi quaerat dolor aliquid ipsam unde maxime suscipit
+                        inventore? Praesentium illo tenetur eaque.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium vero nostrum
+                        laborum a, minima cum eveniet commodi quaerat dolor aliquid ipsam unde maxime suscipit
+                        inventore? Praesentium illo tenetur eaque.
+                    </p>
+                </td>
+                <td><img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/owl-icon.png">
+                </td>
+            </tr>
+            <tr>
+                <td class="a150">
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/space-rocket-icon.png"
+                        class="margin">
+                </td>
+                <td class="a150">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, exercitationem cupiditate fugiat
+                        dignissimos cumque, expedita nobis voluptatibus eum, eaque sequi beatae modi amet dolorem
+                        voluptate magni quidem temporibus magnam dolorum.</p>
+                </td>
+                <td class="fondo" rowspan="2">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos doloremque, quia
+                        reiciendis corrupti ipsam, sed ab consequatur modi vel quaerat dolores sequi quis amet
+                        voluptates minus eligendi ipsa impedit unde?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae facere saepe, iusto velit
+                        veniam veritatis nesciunt aut a ea incidunt sequi maxime repellendus doloribus. Iste fuga
+                        mollitia ut est aliquam.</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="http://icons.iconarchive.com/icons/thesquid.ink/free-flat-sample/128/pan-icon.png" class="margin">
+                </td>
+                <td>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam praesentium vero nostrum
+                        laborum a, minima cum eveniet commodi quaerat dolor aliquid ipsam unde maxime suscipit
+                        inventore? Praesentium illo tenetur eaque.</p>
+
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
