@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POSITION</title>
+    <style>
+        .contenedor {
+            background-color: aqua;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            position:relative;/*non cambia la posizione, aggiunto per fare l'esempio con la position absolute*/
+        }
+        /* top, left, right, bottom 0, 0, indica la posizione di riferimento*/
+        .caja1 {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            position: fixed; /*obligamos la caja en una posición, position seguido por top/left/bottom/right*/
+            top: 10px;/*posición inizial eszquina superior derecha del navegador*/
+            left: 10px;
+        }
+        .caja2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(135, 135, 235);
+            position:relative;/*posizione relativa all'angolo sotto la caja del titolo*/
+            top: 10px;
+            left: -60px;
+        }
+        .caja3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 18, 165);
+            position:absolute;/*posizione relativa all'angolo sotto la caja del titolo*/
+            top: 1px;
+            left: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>POSITION</h1><!--h1 por defecto tiene display block y su caja llega hasta el final-->
+        <div class="caja1"></div><!--posizione originale statica sotto il titolo h1-->
+        <div class="caja2"></div><!--posizione originale statica sotto il titolo h1-->
+        <div class="caja3"></div><!--posizione originale statica sotto il titolo h1-->
+
+
+    </div>
+
+</body>
+
+</html>
