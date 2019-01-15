@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DISPLAY</title>
+    <style>
+        *{
+            font-size: 0px;/*Posso usarlo dato che non ho testo per fare scomparire lo spazio bianco tra las cajas*/
+        }
+    /*Non necessario dare stilo a caja 1, ma per evitare alcuni problemi (cmq risolti sotto), gli potremmo dare un padding e il box-sizing*/
+    /*Necessario mettere inline block a tutte le cajas che sono uno accanto all'altra (es, 2, 3)*/
+    /*estilo caja 2*/
+    .caja2{
+        background-color: red;
+        width: 10%;
+        height: 100vh;/*vh alto del dispositivo de visualizacion, en alto para cajas no podemos utilizar percentajes*/
+        display: inline-block;/*display block por defecto, me pondría la caja uno debajo de la otra*/
+    }
+    /*estilo caja 3*/
+    .caja3 {
+        background-color: black;
+        width: 80%;
+        height: 100vh;
+        display: inline-block;
+    }
+    /*estilo caja 8*/
+    .caja8 {
+            background-color: rgb(35, 192, 61);
+            width: 10%;
+            height: 100vh;
+            display: inline-block;
+        }
+    .caja4{
+        background-color: orange;
+        /*width no hace falta poner ancho a las cajas 4, 5, 6, no hace falta cambiar el display, por defecto es block y podnrá las cajas una enciam de la otra*/
+        height: 10vh;
+    }
+    .caja5{
+        background-color: blueviolet;
+        height:80%;
+        box-sizing: border-box;/*necesario in combinacion con el padding porque si no lo pongo se amplia la caja 5 y se rompe la estructura*/
+        padding: 10%;
+    }
+    .caja6{
+        background-color: rgb(211, 52, 158);
+        height:10%;
+    }
+    .caja7{
+        background-color: yellow;
+        width: 50%;
+        height: 40vh;
+        margin:auto;/*perchè è un display block, ma non si puó usare un vertical align porque si usa con un inline block*/
+    }
+
+    </style>
+</head>
+<body>
+    <div class="caja1">
+        <div class="caja2"></div>
+        <div class="caja3">
+            <div class="caja4"></div>
+            <div class="caja5">
+                <div class="caja7"></div>
+            </div>
+            <div class="caja6"></div>
+        </div>
+        <div class="caja8"></div>
+    </div>
+
+</body>
+</html>
