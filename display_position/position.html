@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <title>POSITION</title>
     <style>
+        h1{
+            background-color: aquamarine;
+        }
         .contenedor {
             background-color: aqua;
             width: 600px;
@@ -25,16 +28,16 @@
             width: 200px;
             height: 200px;
             background-color: rgb(135, 135, 235);
-            position:relative;/*posizione relativa all'angolo sotto la caja del titolo*/
-            top: 10px;
-            left: -60px;
+            position:relative;/*posizione relativa alla posizione normale (in questo caso all'angolo sotto la caja del titolo)*/
+            bottom: -100px;
+            left: 50px;
         }
         .caja3 {
             width: 200px;
             height: 200px;
             background-color: rgb(194, 18, 165);
-            position:absolute;/*posizione relativa all'angolo sotto la caja del titolo*/
-            top: 1px;
+            position:absolute;/*posizione relativa all'angolo sotto la caja del titolo (contenedor: elemento padre con position diverso da static)*/
+            top: 100px;
             left: 10px;
         }
 
@@ -44,7 +47,7 @@
 
 <body>
     <div class="contenedor">
-        <h1>POSITION</h1><!--h1 por defecto tiene display block y su caja llega hasta el final-->
+        <h1>POSITION</h1>h1 por defecto tiene display block y su caja llega hasta el final-->
         <div class="caja1"></div><!--posizione originale statica sotto il titolo h1-->
         <div class="caja2"></div><!--posizione originale statica sotto il titolo h1-->
         <div class="caja3"></div><!--posizione originale statica sotto il titolo h1-->
