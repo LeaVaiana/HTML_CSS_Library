@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        label{
+            width: 200px;
+            display: inline-block;/*bisogna cambiare il display altrimenti non accetta width*/
+            vertical-align: top; /*per avere il label del text area allineato superiore*/
+        }
+        textarea {/*cols=30 rows=10, maxlength, attributi di html ma preferibile CSS*/
+            width: 200px;
+            height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Opzioni di formulario con input type:</h1>
+    <div class="contenedor"><!--Al click nel label il cursore si posiziona nel campo quando relazioniamo il label con l'input mediante il for nell'label e id nell'input-->
+        <form action="#" method="get">
+            <label for="correo">text: Nome e cognome</label>
+            <input id="correo" type="text" name="nome"><!--type: tipo di dato, per difetto texto. name sará il nome del dato che arriverá al servidor-->
+            <input type="text" name="cognome"><!--tutti gli input possono avere un value, nel caso in cui siamo gia registrati in una DB e vogliamo consultare i dati-->
+            <br><br>
+            
+            <label>password:</label>
+            <input type="password" name="pass"><!--attenzione, la password inviata con il get si legge nella barra del navigatore-->
+            <br><br>
+            
+            <label>checkbox:</label>
+            <span>Male</span><input type="checkbox" name="check" value="Male"><!--selezionando il checkbox al servidor arriverá il valore selezionato, puó avere nessuno valore, uno o tutti...-->
+            <span>Female</span><input type="checkbox" name="check" value="Female" checked><!--checked, appare marcato per difetto-->
+            <br><br>
+            
+            <label>radio:</label>
+            <input type="radio" name="radio" value="white"><!--se vogliamo raggruppare radio button devono avere lo stesso name e cosí solo se ne puó selezionare uno -->
+            <input type="radio" name="radio" value="red" checked><!--dobbiamo marcare una opzione per difetto checked-->
+            <input type="radio" name="radio" value="blue">
+            <br><br>
+            
+            <label>file:</label>
+            <input type="file" name="file"><!--in questo caso non possiamo cambiare lo stile del bottone-->
+            <br><br>
+            
+            <label>email:</label>
+            <input type="email" name="email">
+            <br><br>
+            
+            <label>color:</label>
+            <input type="color" name="color">
+            <br><br>
+
+            <label>number:</label>
+            <input type="number" min="1" max="10" name="number"><!--posso selezionare un range e anche lo step-->
+            <br><br>
+
+            <label>range:</label>
+            <input type="range" name="range"><!--es uso: control de volumen, non possiamo cambiarne lo stile-->
+            <br><br>
+
+            <label>date:</label>
+            <input type="date" name="date"><!--Si apre un calendario-->
+            <br><br>
+
+            <label>button:</label><!--Molto usato per validare i dati con JS prima di inviarli al servidor, associandogli un evento-->
+            <input type="button" name="enviar"><!--A differenza dell'input type submit o dell'etichetta button al click non fa nessuna azione-->
+            <br><br>
+            
+            <label>submit:</label><!--Entrambe le soluzioni inviano i dati direttamente al servidor, solo validazione dell'HTML, non si usa-->
+            <input type="submit" name="enviar" value="Invio"><!--il testo del bottone cambia in funzione del navigatore, sempre e quando non usiamo un attributo value-->
+            <button name="enviar">Invio formulario</button><!--Le etichette input e button si possono usare indifferentemente-->
+            <br><br>
+
+            <label>image:</label>
+            <input type='image' src="img/on.png"><!--Si comporta come un submit ma posso scegliere l'icona-->
+            <br><br>
+
+            <h2>Text area</h2>
+            <br>
+            <label>Aggiungi un commento</label>
+            <textarea name="comentario"></textarea>
+
+            <h2>Combos o lista desplegables</h2>
+            <h3>Seleziona la tua provincia</h3>
+            <label>Provincia</label>
+            <select name="ciudad"><!--posso aggiungere il valore selected in modo che appaia come valore di difetto, altrimenti per difetto è la prima opzione-->
+                <option selected disabled>Seleziona</option><!--appare come prima opzione ma non selezionabile-->
+                <option>Agrigento</option>
+                <option>Catania</option>
+                <option>Enna</option>
+                <option>Palermo</option>
+                <option>Ragusa</option>
+                <option>Siracusa</option>
+                <option>Trapani</option>
+            </select>
+            <h3>Listas agrupadas con optgroup</h3>
+            <select>
+                <optgroup label="Grupo1">
+                    <option>Agrigento</option>
+                    <option>Catania</option>
+                    <option>Enna</option>
+                </optgroup>
+                <optgroup label="Grupo2">
+                    <option>Palermo</option>
+                    <option>Ragusa</option>
+                    <option>Siracusa</option>
+                    <option>Trapani</option>
+                </optgroup>
+            </select>
+            <br>
+            <h3>Datalist</h3><!--son sugerencias y nos obliga a introducir un valor aunque no está en la lista-->
+            <label>Ciudad</label>
+            <input list="provincias">
+            <datalist id="provincias">
+                    <option>Palermo</option>
+                    <option>Ragusa</option>
+                    <option>Siracusa</option>
+                    <option>Trapani</option>
+            </datalist>
+
+
+        </form>
+    </div>
+</body>
+</html>

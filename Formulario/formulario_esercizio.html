@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <style>
+        label{
+            width: 200px;
+            display: inline-block;
+        }
+        [required]{/*selector para atributo de etiqueta*/
+            border: 1px solid rgb(0, 140, 255);
+        }
+        input:invalid{/*peseudoselector: todos los estados de input que están en u estado no validos*/
+            background-color: rgb(138, 226, 55);
+            opacity: .6;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="GET"><!--etichetta FORM, se invio mediante post non do la possibilitá di manipolare la url-->
+        <label>Nombre y apellido</label>
+        <input type="text" name="name" required maxlength="10">&nbsp<input type="text" name="surname" required><!--aggiungo alcuni campi required e il maxlenght-->
+        <br><br>
+        <label>Edad</label>
+        <input type="number" name="age">
+        <br><br>
+        <label>Telefono</label>
+        <input type="tel" name="tel" pattern="^[0-9]{9}$"><!--pattern: patrón de validación del contenido-->
+        <br><br>
+        <label>Email</label>
+        <input type="email" name="email" placeholder="youremail@mail.com" required>
+        <br><br>
+        <label>Desea recibir nuestra publicidad:</label><!--aggiungere span per inserire il testo delle opzioni-->
+        <span>SI</span><input type="radio" name=publicidad checked value="si">
+        <span>NO</span><input type="radio" name=publicidad value="no">
+        <br><br>
+        <label>Subscribase a la newsletter</label>
+        <input type="checkbox" name="subscripcion" value="si"> <!--se non viene selezionato il servidor non riceverá il valore si-->
+        <br><br>
+        <label>Enviar:</label> 
+        <!--<input type="button" name="enviar" value="INVIO">-->
+        <input type="submit" name="enviar" value="Enviar">
+    </form>
+</body>
+</html>
