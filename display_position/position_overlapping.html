@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POSITION</title>
+    <style>
+        h1{
+            position: relative;
+            z-index:1;/* se c'è una sovrapposizione quale elemeneto passerá in primo piano, funziona con elementi non statici, quindi bisogna aggiungere un position al titolo*/
+        }
+        .contenedor {
+            background-color: aqua;
+            width: 600px;
+            height: 400px;
+            margin: auto;
+            position:relative;/*non cambia la posizione, aggiunto per fare l'esempio con la position absolute*/
+        }
+        
+        .caja3 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(194, 18, 165);
+            position:absolute;/*posizione relativa all'angolo sotto la caja del titolo*/
+            top: 1px;
+            left: 10px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>POSITION</h1><!--h1 por defecto tiene display block y su caja llega hasta el final, cambiamos la position static con la relative per fare la sovrapposizione-->
+        <div class="caja3"></div><!--posizione originale statica sotto il titolo h1-->
+    </div>
+
+</body>
+
+</html>

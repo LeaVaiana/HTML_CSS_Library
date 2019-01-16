@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>POSITION</title>
+    <style>
+        .contenedor {
+            background-image:url('https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg');
+            background-size:contain;
+            width: 800px;
+            height: 450px;
+            margin: auto;/*cosí appare centrata*/
+            text-align:center;/*se puede utilizar con position relative pero no con position absolute*/
+        }
+        
+        h1{
+            color: white;
+            font-size: 3.5em;
+            font-family: arial;
+            background-color: rgb(51, 95, 240);
+            opacity: .6;
+            position: relative;
+            top:45%;/*calculo la distancia del top*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contenedor">
+        <h1>DESERT</h1><!--h1 por defecto tiene display block y su caja llega hasta el final, cambiamos la position static con la relative per fare la sovrapposizione-->
+    </div>
+
+</body>
+
+</html>
