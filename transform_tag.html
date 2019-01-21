@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .contenedor{
+        width: 500px;
+        height: 300px;
+        margin: auto;
+        border: 5px ridge blue;
+        background-color: rgb(56, 189, 230, 0.5);
+        transition: 2s;
+        position:relative;
+        overflow:hidden;
+    }
+        img{
+            width: 100%;
+        }
+        #etichetta{
+            width: 180px;
+            height: 30px;
+            background-color: rgb(207, 33, 170);
+            position: absolute;
+            top:10px;
+            left: -45px;
+            transform: rotate(-45deg);
+            text-align: center;
+            color:white;
+            line-height: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1></h1>
+    <div class="contenedor">
+        <img src="img/playa.jpg">
+        <div id="etichetta">
+            <span>ciao</span>
+        </div>
+    </div>
+    
+</body>
+</html>

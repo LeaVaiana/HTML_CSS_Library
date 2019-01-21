@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    body{
+        margin-top: 100px;
+        }
+    .contenedor{
+        width: 200px;
+        margin: auto;
+        transition: 2s;
+    }
+    .contenedor:hover{
+        transform: scale(3,3) rotate(360deg);
+
+    }
+    img{
+        width: 200px;
+    }
+    .sesgado{
+        background-color:blueviolet;
+        width:100px;
+        height:100px;
+        margin:auto;
+    }
+    .sesgado:hover{
+        transform:skewX(45deg);
+        transition: 2s;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <img src="img/periodico.jpg">
+    </div>
+    <br>
+    <div class="sesgado"></div>
+    
+</body>
+</html>
